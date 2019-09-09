@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>ETUSIVU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="junafaviv.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Etusivutyyli.css">
+    <script src="Etusivu.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div  class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="Etusivu.html">Matkahaku</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active" class="oma"><a href="Etusivu.html">Etusivu</a></li>
+                <li><a href="lokaatio.html">Kartta asemista</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="tekijoita.html">Tietoa tekijöistä</a></li>
+            </ul>
+            </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="jumbotron">
+    <h1>Tervetuloa matkahakuun</h1>
+    <p>Näiltä sivuilta löydät juna-aikatauluhakukoneen suorille junayhteyksille. </p>
+</div>
+<div class ="container">
+    <blockquote.reverse>
+        <p class="text-right lead">"Minun asemani löytyi hetkessä!"</p>
+        <footer class="text-right">- Matkailija Järvenpäästä</footer>
+    </blockquote.reverse>
+<div class=row>
+<div class="col-xs-12 col-md-8 well" style="background-color: darkseagreen;">
+    <h2>Junahaku</h2>
+    <table id="junalomake">
+        <tr><td>Lähtöasema</td><td><input list="asemat" id="lahtoasema"></td></tr>
+        <tr><td>Määränpää</td><td><input list="asemat" id="maaranpaa"></td></tr>
+    </table>
+
+
+    <datalist id="asemat"></datalist>
+<!---->
+    <input type="button" class="btn btn-warning" value="Hae junat" id="pnk" onclick="naytaValitut()">
+</div>
+
+<div class ="col-xs-12 col-md-4 well" style="background-color: floralwhite".col->
+    <h2>Kirjaudu sisään</h2>
+    <table>
+
+    <form name="login">
+        <tr><td>Käyttäjänimi</td><td><input type="text" name="userid"/></td></tr>
+        <tr><td>Salasana</td><td><input type="password" name="pswrd"/></td></tr>
+        <tr><td><input type="button" class="btn btn-primary" onclick="check(this.form)" value="Kirjaudu"/></td><td>
+            <input type="reset" class="btn btn-danger" value="Peruuta"/></td></tr>
+    </form>
+    </table>
+</div>
+    <div id="bottom">
+    <ul id="tulos"></ul>
+<!--        toinenkaupunkia ei taideta käyttää missään, eikä myöskään junalistaa-->
+    <ul id="toinenkaupunki"></ul>
+
+    <ul id="junalista"></ul>
+
+
+    </div>
+<table class="table table-striped">
+    <tbody id="junataulukko"></tbody>
+</table>
+<input type="button" class="btn btn-warning" value="Hae kaikki" id="pnk2" onclick="haeKaikkiJunat()">
+<table class="table table-striped">
+    <tbody id="kokojunataulukko"></tbody>
+</table>
+</div>
+    <blockquote.reverse>
+        <p class="lead">"Olen erittäin iloinen. En enää eksy!"</p>
+        <footer> - Kokenut junailija Pännäisiltä</footer>
+    </blockquote.reverse>
+</div>
+</body>
+</html>

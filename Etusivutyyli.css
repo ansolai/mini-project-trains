@@ -1,0 +1,69 @@
+body{
+    background-color: #c3c3c3;
+    font-family: Bahnschrift;
+}
+.jumbotron {
+    background-color: rgba(00, 140, 00, 0.6);
+    font-family: Bahnschrift;
+    color: lemonchiffon;
+    text-align: center;
+    border-radius: 35px;
+}
+
+
+#vasen{
+    float: left;
+    width: 50%;
+}
+#oikea{
+    float: right;
+    width: 50%;
+}
+#bottom{
+    float: bottom;
+    width: 100%;
+}
+
+
+#junataulukko{
+    class: "table table-striped";
+}
+#pnk2 { display: none;}
+#pnkLogin2 {display: none;}
+
+.row{
+    border-radius: 10px;
+    background-color: #cacac9;
+}
+.container-fluid {
+    background-color: forestgreen;
+    padding-left: 20px;
+}
+.navbar-inverse{
+    background-color: darkolivegreen;
+    border: darkgreen;
+}
+.navbar-nav {
+    padding-left: 30px;
+}
+/*
+Seuraavassa muotoilussa väliviivalla saadaan muotoilu vaikuttamaan navbar-inversen sisällä kaikkiin lapsiin riippumatta kuinka syvällä
+juuressa ne ovat. Jos välissä on väkänen, se vaikuttaa suoriin lapsiin, kuten juurikin .navbar-nav>.active
+*/
+.navbar-inverse .navbar-nav>.active>a:hover{
+    color: #f8f8ff;
+    background-color: #ff5500;
+    border-radius: 5px;
+}
+.navbar-inverse .navbar-nav>.active>a{
+    color: #f8f8ff;
+    background-color: #ff3800c2;
+    border-radius: 5px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: darkkhaki;
+
+}
+.container-fluid>.navbar-header>.navbar-brand{
+    color: lightsalmon;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="junafaviv.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Etusivutyyli.css">
+    <title>Lokaatio</title>
+
+<!--        alla linkitys leaflet CSS kirjastoon-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <!--    alla linkitys leaflet Javascript ominaisuuksiin-->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
+
+    <style>
+        /*kartan muotoilu*/
+        #mapdiv{
+            height:600px;
+            width:800px;
+            margin: auto;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div  class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="Etusivu.html">Matkahaku</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="Etusivu.html">Etusivu</a></li>
+                <li class="active"><a href="lokaatio.html">Kartta asemista</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="tekijoita.html">Tietoa tekijöistä</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="mapdiv"></div>
+<br>
+<div class="jumbotron">
+    <h1>Matkailu avartaa!</h1>
+    <p>Kartalta löydät kaikki Suomen juna-asemat. <br> Pääset tutustumaan asemakaupunkeihin klikkaamalla sinisiä symboleita.</p>
+</div>
+
+<script src="lokaatio.js"></script>
+
+</body></html>

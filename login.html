@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <title>TÄMÄHÄN TOIMII!</title>
+
+    <link rel="stylesheet" href="Etusivutyyli.css">
+    <script src="login.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div  class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="Etusivu.html">Matkahaku</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="Etusivu.html">Etusivu</a></li>
+                <li><a href="lokaatio.html">Kartta asemista</a></li>
+                <li><a href="galleria.html">Galleria</a></li>
+                <li><a href="tekijoita.html">Tietoa tekijöistä</a></li>
+                <li><a href="etusivu.html">Kirjaudu ulos</a></li>
+            </ul>
+            </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <h1 id="hej">Matkahaku</h1>
+    <p>Olet kirjautunut sisään. Täällä näet aiemmat hakusi. </p>
+
+</div>
+<div class="container">
+    
+
+<div class=row>
+    <div class="col-lg-6 well" style="background-color: darkseagreen;">
+    <h2>Junahaku</h2>
+    <form>
+    <table>
+        <tr><td>Lähtöasema</td><td><input list="asemat" id="lahtoasema"></td></tr>
+        <tr><td>Määränpää</td><td><input list="asemat" id="maaranpaa"></td></tr>
+    </table>
+    </form>
+
+    <datalist id="asemat"></datalist> <!--tähän haetaan asematiedot (lyhenne ja koko nimi)-->
+
+    <input type="button" class="btn btn-warning" value="Hae junat" id="pnkLogin" onclick="naytaValitut()">
+</div>
+<div id="bottom">
+    <ul id="tulos"></ul>
+<!--    Näitä ei taideta käyttää ollenkaan (toinenkaupunki ja junalista)-->
+    <ul id="toinenkaupunki"></ul>
+
+    <ul id="junalista"></ul>
+
+
+</div>
+<table class="table table-striped">
+    <tbody id="junataulukko"></tbody>
+</table>
+
+<input type="button" class="btn btn-warning" value="Hae kaikki" id="pnkLogin2" onclick="haeKaikkiJunat()">
+<table class="table table-striped">
+    <tbody id="kokojunataulukko"></tbody>
+<table  class="table table-striped" id="historia">
+    <tr>Tässä viimeisin hakusi:</tr>
+    <tr></tr>
+</table>
+</table>
+</div>
+</div>
+</body>
+</html>

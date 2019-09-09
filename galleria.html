@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>galleria</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Etusivutyyli.css">
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+            background-color: beige;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: 200px;
+        }
+
+        div.desc {
+
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div  class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="Etusivu.html">Matkahaku</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="Etusivu.html">Etusivu</a></li>
+                <li><a href="lokaatio.html">Kartta asemista</a></li>
+                <li class="active"><a href="galleria.html">Galleria</a></li>
+                <li><a href="tekijoita.html">Tietoa tekijöistä</a></li>
+            </ul>
+            </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="gallery">
+    <a href="https://images.unsplash.com/photo-1515165562839-978bbcf18277?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+        <img src="https://images.unsplash.com/photo-1515165562839-978bbcf18277?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">"Asemalla tavataan"</div>
+</div>
+
+<div class="gallery">
+    <a href="https://images.unsplash.com/photo-1548557700-561382b8a156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80">
+        <img src="https://images.unsplash.com/photo-1548557700-561382b8a156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">"Juna kulkee vaan"</div>
+</div>
+
+<div class="gallery">
+    <a href="https://images.unsplash.com/photo-1527295110-5145f6b148d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1017&q=80">
+        <img src="https://images.unsplash.com/photo-1527295110-5145f6b148d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1017&q=80" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">"Oletko koskaan kokenut luotijunaa"</div>
+</div>
+
+<div class="gallery">
+    <a href="https://images.unsplash.com/21/rail.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+        <img src="https://images.unsplash.com/21/rail.JPG?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">"Rataa riittää"</div>
+</div>
+
+
+
+<div class="jumbotron">
+    <h1>Matkailu avartaa!</h1>
+    <p>Tekeekö mielesi jo matkalle? Tässä muutama inspiraatiokuva matkalle. Ethän klikkaa toista kuvaa vasemmalta.</p>
+</div>
+
+</body>
+</html>
